@@ -1,6 +1,159 @@
-<html>
-<h1> Hello World </h1>
-<body>
-hi
-</body>
+
+
+<!DOCTYPE HTML>
+<html lang="en">
+<!--hacked by bankq :: 81017274-->
+  <head>
+    <title>May the force be with you!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+    body {
+  background-color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	margin: 72px 8% 0 264px;
+	padding: 0px;
+	background-image: url(images/head_back.jpg);
+	background-repeat: repeat-x;
+}
+#sidebar {
+	position: absolute;
+	left: 36px;
+	top: 86px;
+	width: 186px;
+	font-size: .8em;
+}
+#sidebar h3 {
+	font-size: 1.2em;
+}
+#logoDiv {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+}
+#contentdiv {
+	line-height: 1.5;
+	background-color: #FFFFFF;
+}
+#contentdiv p {
+	font-size: .8em;
+	width:75%;
+}
+
+/* #profilePic { */
+
+/*     width:30%; */
+/*     height:100%; */
+/*     float:left; */
+
+
+/* } */
+/* #profileWord{ */
+
+/*     width:70%; */
+/*     height:100%; */
+/*     float:left; */
+
+
+/* } */
+
+.tiny {
+    font-size: 0.8em;
+}
+    
+h1, h2, h3 {
+	margin: 0 0 6px;
+	color: #333333;
+}
+h3 {
+	margin-top: 16px;	
+}
+p {
+	margin: 0px 0px 16px;
+}
+#footer {
+	font-size: .75em;
+	margin-top: 80px;
+}
+/*
+UBERLINK 
+  STYLES Begin here:
+*/
+#navlist {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#navlist a, #navlist a:visited {
+	display: block;
+	padding: 2px 2px 2px 24px;
+	border: 1px solid;
+	border-color: #ddd #000 #000 #ddd;
+	background-color: #999999;
+	background-image:  url(images/down.jpg);
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+	color: #eee;
+	text-decoration: none;
+}
+#navlist a:hover {
+	background-color: #9F6F9F;
+	background-image:  url(images/over.jpg);
+	color: #2D1E2D;
+}
+#sidebar #navlist .uberlink {
+	background-color: #9F6F9F;
+	background-image:  url(images/over.jpg);
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+	color: #333 !important;
+	font-weight: bold;
+	cursor: default;
+}
+    </style>
+    <script type="text/javascript">
+    function Fun(cl,d){
+    var i,ob,tA,h=document.location.href;
+    if(document.getElementById){
+  ob=(d)?document.getElementById(d):document;
+	if(ob){
+	    tA=ob.getElementsByTagName('A');
+	    for(i=0;i<tA.length;i++){
+		if(tA[i].href==h){
+		    tA[i].className=cl;
+		}
+	    }
+	}
+    }
+}
+    </script>
+    <!--[if IE 5]>
+  <style>#navlist a {float: left; clear: both; width: 100%;}</style>
+	<![endif]-->
+    <!--[if lte IE 6]>
+	<style>#navlist a {height: 1%;}</style>
+	<![endif]-->
+
+  </head>
+  <body onLoad="Fun('uberlink','navlist')">
+    <!-- <div id="logoDiv"><img src="images/head.gif" alt="head" width="363" height="32"></div> -->
+    <div id="contentdiv">
+      <h2>Welcome to Qiangrw's home page.</h2>
+  
+    </div>
+    <div id="sidebar">
+      <ul id="navlist">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About</a></li>
+	<li><a href="contact.html">Contact</a></li>
+	<li><a href="resume.html">Résumé</a></li>
+	<li><a href="chinese.html">中文</a></li>
+      </ul>
+
+    </div>
+    <div id="footer">
+      <p>Copyright &copy; 2011 LocalSnake. All Rights Reservered</p>
+    </div>
+  </body>
 </html>
