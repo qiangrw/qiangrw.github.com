@@ -1,10 +1,11 @@
 @charset "utf-8";
-body,h1,h2,h3,h4,p,ul,li,ol,input,textarea,figure,form{margin:0;padding:0}
-body,input,textarea{font-size:12px;font-family:microsoft yahei}
+body,h1,h2,h3,h4,p,ul,li,ol,input,textarea,figure,form{	margin:0.2;padding:0;}
+body,input,textarea{font-size:12px;font-family:Tahoma,microsoft yahei}
 body{text-align:center;color:#33383D;background:#f1f1f1}
-ul,ol{list-style:none}
+ul,ol{padding-left:20px; font-size:16px; line-height:30px;}
 img{border:0}
-
+p {font-size:16px;font-family:Tahoma,microsoft yahei;line-height:25px;}
+hr {margin:5px!important;}
 /* header */
 .header{
 	height:60px;background-color:#33363B;margin-bottom:20px;line-height:60px!important;
@@ -61,7 +62,7 @@ img{border:0}
 }
 .info,.friends{
 	font-size:25px;
-	font-family:microsoft yahei;
+	font-family:Tahoma,microsoft yahei;
 	color:black;
 	text-align:left;
 }
