@@ -4,7 +4,7 @@ title: Lemur工具包简介
 permalink: /2012/03/intro-to-lemur-tool/
 ---
 
-![Lemur Toolkit](http://qiangrw.github.com/images/lemur.jpg "Lemur Toolkit")
+![Lemur Toolkit](http://qiangrw.github.com/images/lemur.gif "Lemur Toolkit")
 
 Lemur是一个用于辅助语言模型和信息检索研究的一个工具包，信息检索广泛被认为是一种特殊的分布检索，它包含结构化的查询，跨语言的查询，统计，过滤，分类。Lemur系统的底层架构正是为了实现上面这些技术的，它提供了很多有用的样例应用，并且可以让你方便的定制自己的应用。
 
