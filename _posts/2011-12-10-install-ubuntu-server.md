@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ubuntu Server 安装和配置
-permalink: /2012/12/install-ubuntu-server/
+permalink: /2011/12/install-ubuntu-server/
 ---
 
 本文简要介绍了安装和配置服务器的简要流程，希望能给准备装服务器的同僚以帮助。
