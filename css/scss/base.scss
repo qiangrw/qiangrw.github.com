@@ -3,9 +3,9 @@ $mid-grey:   #777777;
 $light-grey: #eeeeee;
 $blue:       #227CE8;
 
-$serif: "Palatino Linotype", "Microsoft Yahei",Tahoma,"Book Antiqua", Palatino, serif;
-$sans: Helvetica, "Microsoft Yahei",Tahoma,sans-serif;
-$headline: 'Yanone Kaffeesatz',"Microsoft Yahei", Tahoma,$sans;
+$serif: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+$sans: Helvetica, sans-serif;
+$headline: 'Yanone Kaffeesatz', $sans;
 
 * {
 }
