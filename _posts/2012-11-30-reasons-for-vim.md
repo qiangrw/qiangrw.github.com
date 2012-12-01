@@ -5,7 +5,7 @@ permalink: /2012/11/reasons-for-vim/
 ---
 
 刚开始接触vim还是在大三JYY大神的操作系统课程上，到现在已经好两年多了，然后就爱上了这个编辑器。
-本文分享我在vim下的编辑体验，由于水平有限，欢迎大家指正讨论。
+本文分享我在vim下的编辑体验，由于水平有限，欢迎大家指正。
 如果你想深入了解vim的每一个细节，请移步[vim-doc](http://vimdoc.sourceforge.net/htmldoc/usr_toc.html).
 
 我常用基本操作
@@ -47,7 +47,7 @@ NERDTree
 zen-coding (as a web developer)
 ----------
 
-[zen-coding](http://www.vim.org/scripts/script.php?script_id=2981)给我们提供了快速编写HTML/CSS的方式，
+[zen-coding](http://www.vim.org/scripts/script.php?script_id=2981) 给我们提供了快速编写HTML/CSS的方式，
 你可以只写一个简单的规则如：
 html>head+body>h1+div#content+footer,
 然后按下(Ctrl+y+,):
@@ -61,7 +61,7 @@ html>head+body>h1+div#content+footer,
      <footer></footer>
    </body>
  </html>
-{% highlight html %}   
+{% highlight html %}
 
 当然zencoding还不止这些，为了熟悉zencoding，你可以先看一下一个简单的[视频演示](http://mattn.github.com/zencoding-vim/),
 然后通过这篇[TUTORIAL](https://raw.github.com/mattn/zencoding-vim/master/TUTORIAL) 详细了解zencoding的各种操作。
@@ -71,8 +71,9 @@ html>head+body>h1+div#content+footer,
 LaTeX-suite (as a LaTeXer)
 ----------
 
-[vim-latex-plugin](http://vim-latex.sourceforge.net/index.php)绝对是一个不错的选择,
-它提供了丰富的补全命令,甚至还提供了很多常用的TeX模板(内置了IEEtran, article, report, report_two_column，当然你也可以把你的模板加入其中)
+[vim-latex-plugin](http://vim-latex.sourceforge.net/index.php) 是一个优秀的选择,
+它提供了丰富的语法自动补全命令,甚至还提供了很多常用的TeX模板(内置了IEEtran, article, report, report_two_column，
+当然你也可以把你的模板加入其中)。
 
 
 先写这么多了，欢迎大家在下面的评论中补充~
