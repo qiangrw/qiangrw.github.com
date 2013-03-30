@@ -59,5 +59,11 @@ html>head+body>h1+div#content+footer,
 当然你也可以把你的模板加入其中)。
 
 
-先写这么多了，欢迎大家在下面的评论中补充~
+## 利用pathogen.vim轻松管理vim插件
+使用pathogen.vim可以方便的管理vim插件，首先按照[vim-pathogen](https://github.com/tpope/vim-pathogen)
+README 安装好pathogen.vim, 建立好bundle文件夹后，想要什么插件，直接复制到该文件夹即可。
+
+### 快速通道
+* [NERDTree](https://github.com/scrooloose/nerdtree)
+* [ZenCoding](https://github.com/mattn/zencoding-vim)
 
