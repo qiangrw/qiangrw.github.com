@@ -64,6 +64,16 @@ html>head+body>h1+div#content+footer,
 README 安装好pathogen.vim, 建立好bundle文件夹后，想要什么插件，直接复制到该文件夹即可。
 
 ### 快速通道
+* [VIM-PATHOGEN](https://github.com/tpope/vim-pathogen)
 * [NERDTree](https://github.com/scrooloose/nerdtree)
 * [ZenCoding](https://github.com/mattn/zencoding-vim)
+
+### QUICK CMD
+* mkdir -p ~/.vim/autoload ~/.vim/bundle
+* curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+* change .vimrc file,  add to line1:  execute pathogen#infect()
+* cd ~/.vim/bundle
+* git clone https://github.com/scrooloose/nerdtree.git
+* git clone git clone git://github.com/tpope/vim-sensible.git
+* git clone https://github.com/mattn/emmet-vim.git
 
