@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 搞基指南 —— LocalsNake那些人那些事
+category: 生活
 permalink: /2012/10/member-of-LocalsNake/
 ---
 # 序言

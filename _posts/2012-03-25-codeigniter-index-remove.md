@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 在CodeIgniter删除URL中的index.php
+category: 技术
 permalink: /2012/03/codeigniter-index-remove/
 ---
 

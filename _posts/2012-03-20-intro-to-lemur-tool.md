@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Lemur工具包简介
+category: 科研
 permalink: /2012/03/intro-to-lemur-tool/
 ---
 

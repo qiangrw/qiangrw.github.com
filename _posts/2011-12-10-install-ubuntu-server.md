@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ubuntu Server 安装和配置
+category: 技术
 permalink: /2011/12/install-ubuntu-server/
 ---
 

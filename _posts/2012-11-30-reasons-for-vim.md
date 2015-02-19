@@ -1,6 +1,7 @@
 ---
 layout: post
 title: vim编辑体验
+category: 技术
 permalink: /2012/11/reasons-for-vim/
 ---
 
