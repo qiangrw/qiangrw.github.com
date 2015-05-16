@@ -78,3 +78,7 @@ Lemur主要支持为两种格式的文件建立索引，包括TRECFormat和WebFo
 更多功能详见其项目主页： http://lemurproject.org/lemur/
 
 同时Lemur也支持在原模型上进行进一步的开发，提供了C++,Java和PHP接口，其中C++接口最为完善，PHP接口仅提供了在已有的索引上用简单的语言模型进行搜索（site-search的配置也有点纠结），故修改模型时采用C++有更多的灵活度。
+
+# 更多资源
+关于Lemur在检索中的应用，我在当文本挖掘助教时写了简单的使用范例，提供给大家参考。
+* [PPT 下载](http://webkdd.org/archive/text-mining-14/assignment/download/assignment2/lemur_intro.qiang.pdf)
