@@ -81,4 +81,5 @@ Lemur主要支持为两种格式的文件建立索引，包括TRECFormat和WebFo
 
 # 更多资源
 关于Lemur在检索中的应用，我在当文本挖掘助教时写了简单的使用范例，提供给大家参考。
+
 * [PPT 下载](http://webkdd.org/archive/text-mining-14/assignment/download/assignment2/lemur_intro.qiang.pdf)
