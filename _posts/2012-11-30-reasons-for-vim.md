@@ -38,7 +38,7 @@ permalink: /2012/11/reasons-for-vim/
 [NERDTree](http://www.vim.org/scripts/script.php?script_id=1658) 是一个相当不错的文件浏览器，
 集成在vim中后可以让vim像一个IDE一样方便的在各个文件中跳转。如下图所示：
 
-![NERDTree](http://qiangrw.github.com/images/nerdtree.png "NERD TREE")
+![NERDTree](http://qiangrw.github.io/images/nerdtree.png "NERD TREE")
 
 
 ### zen-coding (as a web developer)
