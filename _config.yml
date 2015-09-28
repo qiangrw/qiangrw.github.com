@@ -3,4 +3,6 @@ pygments: true
 permalink: /posts/:title
 auto: true
 rdiscount:
-  extensions: [smart, backtick-delimited]
+  extensions: 
+    - smart 
+    - autolink # greedily urlify links
