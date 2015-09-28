@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
@@ -21,44 +20,54 @@
       {{ page.script }}
     });
   </script>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?4d9cfa1ae762f29133bfe7a386bf1a3e";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
 </head>
 
 <body>
-  <section class="sidebar">
+    <section class="sidebar">
     <a href="/">
-      <img src="http://en.gravatar.com/userimage/29112051/ca608816f875000a6cb0304aa485308e.jpeg" height="75" width="75" class="avatar" />
+        <img src="http://en.gravatar.com/userimage/29112051/ca608816f875000a6cb0304aa485308e.jpeg" height="75" width="75" class="avatar" />
     </a>
 
     <section class="name">
-      <a href="/">
+    <a href="/">
         <span id="holman">Qiang</span>
-      </a>
+    </a>
     </section>
 
     <section class="alt-text">&nbsp;</section>
 
     <section class="meta">
-      <a href="https://github.com/qiangrw" id="github">
+    <a href="https://github.com/qiangrw" id="github">
         <img src="/images/github.png" alt="github" title="@qiangrw on GitHub" height="16" width="16" />
-      </a>
-      <a href="http://facebook.com/qiangrw" id="facebook">
+    </a>
+    <a href="http://facebook.com/qiangrw" id="facebook">
         <img src="/images/facebook.png" alt="facebook" title="@qiangrw on Facebook" height="16" width="16" />
-      </a>
-      <a href="http://linkedin.com/in/qiangrw" id="linkedin">
+    </a>
+    <a href="http://linkedin.com/in/qiangrw" id="linkedin">
         <img src="/images/linkedin.png" alt="linkedin" title="@qiangrw on Linkedin" height="16" width="16" />
-      </a>
+    </a>
     </section>
 
     <section class="sections">
-      <ul>
+    <ul>
         <li><a href="/">archive</a></li>
         <li><a href="http://runwei.info">homepage</a></li>
         <li><a href="/friends">friends</a></li>
-      </ul>
+    </ul>
     </section>
-  </section>
+    </section>
 
-  {{ content }}
+    {{ content }}
 
 </body>
 </html>
