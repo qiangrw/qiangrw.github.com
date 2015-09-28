@@ -3,6 +3,7 @@ layout: post
 title: 搞基指南 —— LocalsNake那些人那些事
 category: 生活
 permalink: /2012/10/member-of-LocalsNake/
+keywords: LocalsNake
 ---
 # 序言
 “一切都是瞬息，一切终将过去，而那过去了的都会成为亲切的怀念。” 

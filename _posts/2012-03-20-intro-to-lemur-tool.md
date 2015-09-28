@@ -3,6 +3,7 @@ layout: post
 title: Lemur工具包简介及检索实践
 category: 科研
 permalink: /2012/03/intro-to-lemur-tool/
+keywords: Lemur, Information Retrieval, IR
 ---
 
 ![Lemur Toolkit](http://qiangrw.github.io/images/lemur.gif "Lemur Toolkit")

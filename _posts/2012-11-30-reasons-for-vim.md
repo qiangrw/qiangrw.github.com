@@ -3,6 +3,7 @@ layout: post
 title: vim编辑体验
 category: 技术
 permalink: /2012/11/reasons-for-vim/
+keywords: vim, plugin, reasons
 ---
 
 刚开始接触vim还是在大三JYY大神的操作系统课程上，到现在已经好两年多了，然后就爱上了这个编辑器。
