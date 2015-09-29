@@ -4,6 +4,7 @@ title: 在C++中使用SSE优化点乘运算
 category: 技术
 permalink: /2015/09/optimize-dot-product-with-sse/
 keywords: dot-product, sse, c++
+draft: true
 ---
 
 # 引言
