@@ -21,15 +21,6 @@
       {{ page.script }}
     });
   </script>
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "//hm.baidu.com/hm.js?4d9cfa1ae762f29133bfe7a386bf1a3e";
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
 
 </head>
 
@@ -70,5 +61,15 @@
 
     {{ content }}
 
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?4d9cfa1ae762f29133bfe7a386bf1a3e";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 </body>
 </html>
