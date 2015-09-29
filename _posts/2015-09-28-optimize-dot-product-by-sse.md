@@ -58,9 +58,17 @@ float DotProd(const float *p, const float *q, int size)
 }
 ```
 
-而采用SSE技术的点积操作如下书写：
+作为一个新手，编写SSE指令相关的代码不是一件容易的事，
+MSDN给出了比较详细的一个[使用文档](https://msdn.microsoft.com/en-us/library/kcwz153a(v=vs.90).aspx)。
+在C++中使用SSE的确是一项很底层的工作，类似编写汇编，我们需要控制那些128比特寄存器。
+其中，__m128用于float类型定义，__m128d用于double类型，__m128i用于int，short和char类型。
+幸运的是，你并不需要去声明这些类型的数组。
+举个例子，你在计算一个很大的数组的平方根时，你可以将数据指针置为__m128*类型，从而方便的使用SSE操作。
+
+那么，言归正传，采用SSE技术的点积操作可以按如下书写（这里我们假设size是4的倍数）：
 
 ```c
+#include <smmintrin.h>
 float DotProdSSE(const float *p, const float *q, int size) {
     float result[4]; 
     __m128 X, Y, Z;
@@ -72,7 +80,7 @@ float DotProdSSE(const float *p, const float *q, int size) {
         else Z = _mm_add_ps(X, Z);
     }
     _mm_storeu_ps(result, Z);
-    for(int i = 1; i < 4; ++i) {
+    for (int i = 1; i < 4; ++i) {
         result[0] += result[i];
     }
     return result[0];
@@ -80,11 +88,10 @@ float DotProdSSE(const float *p, const float *q, int size) {
 ```
 
 
-
-
 # 性能对比
 本小杰给出采用SSE优化前后向量点积操作的性能对比。
-
+测试采用计算1M次100维的向量点积运算，在Macbook Air上跑。
+前者使用440.161ms, 后者使用229.644ms，快了一倍。
 
 
 # 参考
