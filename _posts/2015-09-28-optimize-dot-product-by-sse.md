@@ -25,14 +25,19 @@ n维向量的[内积定义](http://baike.baidu.com/link?url=LTLShAYCiDt7zG8vfKpA
 在C++中，能让我们更快计算点积的便是SSE指令，本文将简要介绍SSE以及使用。
 
 # 什么是SSE
+SSE是Streaming SIMD Extensions的缩写，即SIMD流指令扩展。
+它是一组专用于信号处理、科学计算以及3D图形应用的CPU指令集。
+SIMD是Single Instruction, Multiple Data的缩写，即单指令处理多条数据。
+
+SSE最早在奔腾三处理中引入（1999）。
 
 
 # 简单程序示例
 作为示例，我们用单精度浮点数保存向量空间的点坐标。
 那么对于纬度均为size的向量p和向量q，最常见的计算向量内积的方式如下：
 
-```c
-float DotProdNormal(const float *p, const float *q, int size)
+```
+float DotProd(const float *p, const float *q, int size)
 {
 	float res = 0;
 	for (int i = 0; i < size; ++i) {
@@ -45,7 +50,7 @@ float DotProdNormal(const float *p, const float *q, int size)
 
 而采用SSE技术的点积操作如下书写：
 
-```c
+```
 float DotProdSSE(const float *p, const float *q, int size) {
     float result[4]; 
     __m128 X, Y, Z;
@@ -72,6 +77,8 @@ float DotProdSSE(const float *p, const float *q, int size) {
 
 
 
+# 参考
+* http://felix.abecassis.me/2011/09/cpp-getting-started-with-sse/
 
 
 
