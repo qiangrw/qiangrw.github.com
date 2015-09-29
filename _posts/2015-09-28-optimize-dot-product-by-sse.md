@@ -4,7 +4,6 @@ title: 在C++中使用SSE优化点乘运算
 category: 技术
 permalink: /2015/09/optimize-dot-product-with-sse/
 keywords: dot-product, sse, c++
-draft: true
 ---
 
 # 引言
@@ -30,14 +29,25 @@ SSE是Streaming SIMD Extensions的缩写，即SIMD流指令扩展。
 它是一组专用于信号处理、科学计算以及3D图形应用的CPU指令集。
 SIMD是Single Instruction, Multiple Data的缩写，即单指令处理多条数据。
 
-SSE最早在奔腾三处理中引入（1999）。
+SSE最早在奔腾三处理中引入（1999）。 随后，该指令集不断成熟，
+支持了更多成熟的操作，引入了8个128比特的寄存器到CPU中：xmm0 - xmm7。
+刚开始的时候，这些寄存器只可以用于单精度数（即float）的计算，
+到了SSE2代的时候，就可以用于任何基础数据类型了。
+以一台32比特的机器为例，我们可以并行处理：
 
+* 2个double/long类型数据
+* 4个float/int类型数据
+* 8个short类型数据
+* 16个char类型数据
+
+特别的，整数类型可以是有符号，也可以是无符号的，但（有时）需要使用不同的指令。
+举个更具体的例子，如果你需要计算两个int数组的和，你可以同时进行4个加法运算。
 
 # 简单程序示例
 作为示例，我们用单精度浮点数保存向量空间的点坐标。
 那么对于纬度均为size的向量p和向量q，最常见的计算向量内积的方式如下：
 
-```python
+```c 
 float DotProd(const float *p, const float *q, int size)
 {
 	float res = 0;
@@ -46,12 +56,11 @@ float DotProd(const float *p, const float *q, int size)
 	}
 	return res;
 }
-
 ```
 
 而采用SSE技术的点积操作如下书写：
 
-```
+```c
 float DotProdSSE(const float *p, const float *q, int size) {
     float result[4]; 
     __m128 X, Y, Z;
