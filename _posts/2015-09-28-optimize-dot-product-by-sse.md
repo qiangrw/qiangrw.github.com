@@ -36,7 +36,7 @@ SSE最早在奔腾三处理中引入（1999）。
 作为示例，我们用单精度浮点数保存向量空间的点坐标。
 那么对于纬度均为size的向量p和向量q，最常见的计算向量内积的方式如下：
 
-```
+```python
 float DotProd(const float *p, const float *q, int size)
 {
 	float res = 0;
