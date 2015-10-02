@@ -46,12 +46,23 @@ StackOverflow就采用了JS配置对象模式，Google也是。
 
 如图可见，StackOverflow注入了自定义的设置如isNoticesTabEnabled等。
 这个简单地JSON片段提供了在使用静态JS文件时需要的自定义配置。
-为了实现这个模式，你需要在服务器端提供一个序列化的类到JSON数据中并注入HTML头部<head>，
+为了实现这个模式，你需要在服务器端提供一个序列化的类到JSON数据中并注入HTML头部`<head>`，
 之后你可以在任意位置引用这些数据（因为他们在head部分就初始化了）。
 
-# 3. JS Should be Minified 
+# 3. 最小化JS代码来节约存储
+最小化JS代码可以减少文件大小，从而加快页面加载速度。
+为了最小化JS代码，同样地，你必须要遵从建议1.
+过去最小化JS代码还挺麻烦的，现在有很多自动化工具可以实现了。
+推荐使用含[gulp-uglify](https://www.npmjs.com/package/gulp-uglify)的
+[Gulp](http://gulpjs.com/)来完成。
 
-# 4. JS Belongs at the Bottom
+# 4. JS放在文件底部 
+如果你把所有`<script>`标签都放在`<head>`标签内，会阻塞HTML页面的加载。
+在`<head>`标签内的JS代码必须在body之前就加载完。
+而把`<script>`标签放在底部可以让页面不用等待下载脚本就把页面先加载显示出来。
+这样做能给用户至少先看到页面的基本内容，从而提升用户体验。
+如果你的确必须把某些JS代码放在头部，你可以考虑使用JQuery的`$(document).ready`代码块，
+这样你的这部分代码会在DOM元素准备好之后再执行。
 
 # 5. JS Should Be Linted Real-time
 
@@ -68,5 +79,9 @@ StackOverflow就采用了JS配置对象模式，Google也是。
 # 11. Use a Framework or Libraries
 
 # 12. JS Should Separate Concerns
+我们很容易养成将所有JS代码放到一个文件里面的习惯，
+或者相应地按照你所用的框架的建议来。
+在写Client时不要忘了你在写Server端时学到的经验。
+
 
 
