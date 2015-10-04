@@ -3,7 +3,7 @@ layout: post
 title: 通往JavaScript专家的12条建议（译）
 category: 技术
 permalink: /2015/10/12-rules-for-professional-javascript-in-2015
-keywords: javascript, rules, professional
+keywords: javascript, rules, professional, es6, Web Development
 ---
 
 原文链接: [点击查看](https://medium.com/@housecor/12-rules-for-professional-javascript-in-2015-f158e7d3f0fc)
@@ -129,7 +129,7 @@ JavaScript现在几乎每年更新一版本，所以我们将很可能和代码�
 代码翻译是我们的未来。
 或者如果你偏爱使用强类型，那么你可以尝试使用[TypeScript](http://www.typescriptlang.org/)来编译到JS代码。
 
-结果就是： 你不再需要写ES5代码了。考虑使用抽象来给你额外的力量！
+_结果就是： 你不再需要写ES5代码了。考虑使用抽象来给你额外的力量！_
 
 # 10. JS代码需要有自动化构建
 我们已经说过LINT检查，最小化代码，代码翻译和测试。
@@ -141,11 +141,33 @@ Grunt和[Webpack](http://webpack.github.io/) 也是不错的选择。
 关键在于，不要想着有个人可以手动来做这些事情，自动化起来并享受其带来的快乐！
 
 # 11. 使用框架或者库
+利用好一些现成的好的工具。如果需要轻量级的，
+可以使用[Backbone](http://backbonejs.org/)或者[Knockout](http://knockoutjs.com/)。
+甚至单纯使用jQuery已经足够了。
+如果需要用更加多功能的工具，那么可以尝试使用
+[Angular](https://angularjs.org/), [Ember](http://emberjs.com/),
+或者用带[Flux](https://facebook.github.io/flux/docs/overview.html)的[React](https://facebook.github.io/react/).
 
-# 12. JS Should Separate Concerns
+最主要的一点是：千万不要从头重造轮子，你需要站在巨人的肩膀上。
+
+React + Flux是我现在客户端开发最得心应手的组合工具，我刚在Pluralsight上发布了一个相关主题的[课程](http://www.pluralsight.com/courses/react-flux-building-applications)。
+在课程中，我给出了构建过程中得各个方面。
+
+无论你使用什么框架，需要记住的是你要分担你的各个部分的烦恼，这也就是下一点建议我会说的内容。
+
+# 12. JS代码需要单独分开事务 
 我们很容易养成将所有JS代码放到一个文件里面的习惯，
 或者相应地按照你所用的框架的建议来。
 在写Client时不要忘了你在写Server端时学到的经验。
 
+通过分隔烦恼，我并不说像你在MV*框架（如Angular、Knockout）那样简简单单的分隔模型、视图或者控制器。
+我的意思是说：_像一个后端开发者一样写你的JavaScript代码，把你的业务逻辑和数据访问分隔开来。_
+这也就是说，AJAX需要在一个地方搞定，创建一个集中式的客户端访问层。
+另外，和表示层框架无关的那部分代码需要放到单独的“POJOs”（Plain ‘ol JavaScript objects）。
+业务逻辑层模块需要仅包含纯JavaScript代码，也就是不应该有框架相关的代码。
+这样做，我们可以让逻辑更加方便地复用，测试，
+而且你可以很轻松的废弃使用Angular，而采用本月最新的框架。
 
+# 总结
+前面提到的点真是好多！ 没错，我们现在这个年代是需要前端“专家”的年代。
 
