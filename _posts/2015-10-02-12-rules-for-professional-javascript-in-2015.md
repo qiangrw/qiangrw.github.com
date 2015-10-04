@@ -87,7 +87,7 @@ LINT代码检查强制要求我们按照代码风格指南来书写代码，
 如果你还是个JavaScript测试新手，我推荐使用[Jasmine](http://jasmine.github.io/)；
 如果你想有最高端的配置，可以使用配备[Chai](http://chaijs.com/)的[Mocha](https://mochajs.org/)框架。
 
-# 7. JS代码需要封装(Encapsulated)
+# 7. JS代码需要封装
 我们很早前就已经知道使用全局变量的危害性。幸运的是，至今我们已经有很多种封装JS代码的方法了：
 
 * [Immediately Invoked Function Expressions](https://en.wikipedia.org/wiki/Immediately-invoked_function_expression) (IIFE)
@@ -105,10 +105,40 @@ CommmonJS在浏览器中不能独立运行，
 所以你需要使用一个打包工具类似[Browserify](http://browserify.org/)或[Webpack](http://webpack.github.io/)使用
 
 # 8. 需要显示指出JS代码依赖
+这条建议和上一条建议息息相关。
+一旦你开始封装你的JS代码，就需要一个简单易行的方法来引用其他模块。
+这就是现代化模块系统如CommonJS和ES6模块的优雅之处。
+你可以在文件头部指定你的依赖，很像Java或者C\#中的import语句。
+JavaScript已经越来越成熟了。
 
-# 9. Transpile to JS
+```javascript
+//CommonJS
+var react = require(‘react’);
+//ES6 Modules
+import React from ‘React’
+```
 
-# 10. JS Should Have an Automated Build
+
+# 9. 翻译到可用的JS代码
+JavaScript最新的版本[EcmaScript2015](http://www.ecma-international.org/ecma-262/6.0/)，也即ES6，在今年六月发布。
+浏览器尚[不支持对其新特性](https://kangax.github.io/compat-table/es6/)，
+但问题不大，你可以使用[Babel](https://babeljs.io/)来拥抱[大部分新特性](http://es6katas.org/)。
+Babel讲ES6翻译成ES5，假设你可以很好地处理好[性能变化](http://kpdecker.github.io/six-speed/),
+就可以很好地使用这些新特性。
+JavaScript现在几乎每年更新一版本，所以我们将很可能和代码翻译相依为命。
+代码翻译是我们的未来。
+或者如果你偏爱使用强类型，那么你可以尝试使用[TypeScript](http://www.typescriptlang.org/)来编译到JS代码。
+
+_结果就是： 你不再需要写ES5代码了。考虑使用抽象来给你额外的力量！_
+
+# 10. JS代码需要有自动化构建
+我们已经说过LINT检查，最小化代码，代码翻译和测试。
+那么如何让这些过程自动发生呢？ 
+很简单，采用自动化构建工具来监视所有代码文件。
+同样，Gulp仍然是把这些连在一起的流行工具，采用其[监视函数](https://github.com/gulpjs/gulp/blob/master/docs/API.md#gulpwatchglob--opts-tasks-or-gulpwatchglob--opts-cb)。
+Grunt和[Webpack](http://webpack.github.io/) 也是不错的选择。
+如果你是个Bash天才，你当然也可以完全自己用npm构建这样的自动化工具。
+关键在于，不要想着有个人可以手动来做这些事情，自动化起来并享受其带来的快乐！
 
 # 11. 使用框架或者库
 
