@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 通往JavaScript专家的12条建议（译）
+title: 改善JavaScript代码的12条建议（译）
 category: 技术
 permalink: /2015/10/12-rules-for-professional-javascript-in-2015
 keywords: javascript, rules, professional, es6, Web Development
