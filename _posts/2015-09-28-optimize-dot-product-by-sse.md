@@ -92,9 +92,9 @@ float DotProdSSE(const float *p, const float *q, int size) {
 
 在编译SSE指令的程序时，需要显示说明(假设主代码文件为main.cpp)：
 
-```
-g++ -m64 -msse4.1 -c main.cpp
-```
+{% highlight bash %}
+    g++ -m64 -msse4.1 -c main.cpp
+{% endhighlight bash %}	
 
 # 性能对比
 本小节给出采用SSE优化前后向量点积操作的性能对比。
